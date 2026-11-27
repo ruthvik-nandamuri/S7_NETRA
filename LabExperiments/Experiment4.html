@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Campus Dashboard</title>
+    <link rel="stylesheet" href="Experiment4.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h2>Smart Campus</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Clubs</a>
+        <a href="#">Services</a>
+    </nav>
+
+    <button onclick="changeTheme()">Dark / Light</button>
+</header>
+
+<h1>Welcome to Smart Campus</h1>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>Campus Events</h2>
+        <p>View upcoming campus events.</p>
+    </div>
+
+    <div class="card">
+        <h2>Student Clubs</h2>
+        <p>Join different student clubs.</p>
+    </div>
+
+    <div class="card">
+        <h2>Announcements</h2>
+        <p>Check latest university updates.</p>
+    </div>
+
+    <div class="card">
+        <h2>Campus Services</h2>
+        <p>Explore campus facilities.</p>
+    </div>
+
+</div>
+
+<script>
+function changeTheme() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>

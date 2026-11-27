@@ -1,0 +1,118 @@
+
+/* Light Theme */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --card-bg: #f2f2f2;
+    --primary-color: blue;
+}
+
+/* Dark Theme */
+.dark {
+    --bg-color: #222;
+    --text-color: white;
+    --card-bg: #444;
+    --primary-color: orange;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial;
+    margin: 0;
+    transition: 0.5s;
+}
+
+/* Header */
+header {
+    background: var(--card-bg);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 10px;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dashboard */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    animation: move 1s;
+    transition: 0.3s;
+    container-type: inline-size;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card:has(p) {
+    border: 2px solid var(--primary-color);
+}
+
+/* Container Query */
+@container (max-width: 250px) {
+    .card {
+        padding: 10px;
+    }
+}
+
+/* Animation */
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Reduce Animation */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
