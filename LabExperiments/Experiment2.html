@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment</title>
+    <link rel="stylesheet" href="Experiment2.css">
+</head>
+<body>
+
+<header>
+    <h1>City Care Hospital</h1>
+    <p>Your Health Is Our Priority</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#appointment">Appointment</a>
+</nav>
+
+<main>
+
+    <section id="home">
+        <h2>Welcome to City Care Hospital</h2>
+        <p>We provide quality healthcare and medical services.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <article>
+            <h3>Cardiology</h3>
+            <p>Heart care and treatment.</p>
+        </article>
+
+        <article>
+            <h3>Neurology</h3>
+            <p>Brain and nerve treatment.</p>
+        </article>
+
+        <article>
+            <h3>Orthopedics</h3>
+            <p>Bone and joint treatment.</p>
+        </article>
+    </section>
+
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+
+        <article>
+            <h3>Dr. Ravi Kumar</h3>
+            <p>Cardiologist</p>
+        </article>
+
+        <article>
+            <h3>Dr. Priya Sharma</h3>
+            <p>Neurologist</p>
+        </article>
+    </section>
+
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+
+        <form>
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="department">Department:</label>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4"></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <aside>
+        <h2>Hospital Timings</h2>
+        <p>Monday - Saturday: 9 AM - 6 PM</p>
+    </aside>
+
+</main>
+
+<footer>
+    <p>© 2026 City Care Hospital</p>
+    <p>Contact: citycare@gmail.com</p>
+</footer>
+
+</body>
+</html>
